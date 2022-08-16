@@ -1,0 +1,520 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+body {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  height: 72px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+}
+
+.header_body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+
+}
+
+.logo {
+  margin: 30px;
+}
+
+header_items {
+  display: flex;
+
+
+}
+
+.sing_in {
+  box-sizing: border-box;
+
+  /*position: absolute;*/
+  width: 78px;
+  height: 40px;
+  left: 903px;
+  top: 16px;
+
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+
+}
+
+.a_sing_in {
+  text-decoration: none;
+  position: absolute;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+
+  display: flex;
+  padding: 14px 20px;
+
+  color: #1D1D1D;
+
+}
+
+.basket {
+  position: absolute;
+  top: 30px;
+  right: 97px;
+
+}
+
+
+/*Шрифт который будет дальше*/
+{
+  font-family: 'Roboto', sans-serif
+;
+  font-weight: 400
+;
+}
+@media (max-width: 320px) {
+  .basket {
+    display: none;
+  }
+}
+
+/* SEARCH */
+
+.search_restaurant {
+
+  width: 100%;
+  position: relative;
+  padding-top: 110px;
+}
+
+.search {
+
+  background: #757575;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  border-bottom: 1px solid #757575;
+  color: #626262;
+  font: 16px Roboto, sans-serif;
+
+}
+
+@media (max-width: 768px) {
+  .search {
+    padding: 0px 8px 0px 8px;
+  }
+}
+
+/*@media (max-width:320px) {
+.search {
+  padding: 0px 8px 0px 8px;
+}}
+*/
+
+
+/*CONTENT*/
+comtainer {
+  margin: 76px;
+}
+
+.restaurant {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  /* identical to box height, or 155% */
+
+  display: flex;
+  align-items: center;
+
+  color: #1D1D1D;
+}
+
+/*.card:hover {
+  margin: 0 16px 0 0;
+  background: #757575;
+  mix-blend-mode: normal;
+  opacity: 0.04;
+}  работает но плохо*/
+
+.name_rest {
+  text-decoration: none;
+  display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #1D1D1D;
+}
+
+.card {
+  margin-bottom: 36px;
+
+}
+
+.card > img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/*.card >a {
+  margin: 0 16px 0 0;
+}*/
+.card > p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+  color: #626262;
+  margin: 0 4px 0 0;
+}
+
+
+/* FOOTER */
+footer {
+  box-sizing: border-box;
+  background: #262626;
+  padding: 59px 0 0 0;
+}
+.logo_in_footer {
+  margin: 0px 0 40px 0;
+}
+.sharp{
+
+  color: rgba(73, 161, 68, 1);
+}
+
+.footer_p {
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+
+}
+
+hr {
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  margin: 0 84px;
+}
+
+select {
+  width: 70%;
+  outline: none;
+  position: relative;
+  bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font: 13px Roboto, sans-serif;
+  color: white;
+  border: none;
+  background-color: #3B3B3B;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+}
+
+.language {
+  height: 40px;
+  width: 100%;
+  background: #3B3B3B;
+  border-radius: 2px;
+  position: relative;
+}
+
+.language > img {
+  padding: 12px 16px 12px 16px;
+}
+
+.social-icons {
+  margin-top: 33px;
+}
+
+.social-icons li a {
+  border-bottom: none;
+}
+
+.social-icons li img {
+
+}
+
+
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+/*
+::-moz-selection {
+ background: #b3d4fc;
+ text-shadow: none;
+}
+
+::selection {
+ background: #b3d4fc;
+ text-shadow: none;
+}
+
+/*
+* A better looking default horizontal rule
+
+
+hr {
+ display: block;
+ height: 1px;
+ border: 0;
+ border-top: 1px solid #ccc;
+ margin: 1em 0;
+ padding: 0;
+}
+*/
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+/*
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+*/
+/*
+ * Remove default fieldset styles.
+ */
+/*
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/*
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+/*
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+/*
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+/*
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+/*
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/*
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/*
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+
+/*
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+/*
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+/*  box-shadow: none !important;
+  text-shadow: none !important;
+}
+*//*
+a,
+a:visited {
+  text-decoration: underline;
+}
+
+a[href]::after {
+  content: " (" attr(href) ")";
+}
+
+abbr[title]::after {
+  content: " (" attr(title) ")";
+}
+
+/*
+ * Don't show links that are fragment identifiers,
+ * or use the `javascript:` pseudo protocol
+ */
+/*
+ a[href^="#"]::after,
+ a[href^="javascript:"]::after {
+   content: "";
+ }
+
+ pre {
+   white-space: pre-wrap !important;
+ }
+
+ pre,
+ blockquote {
+   border: 1px solid #999;
+   page-break-inside: avoid;
+ }
+
+ /*
+  * Printing Tables:
+  * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+  */
+/*
+ thead {
+   display: table-header-group;
+ }
+
+ tr,
+ img {
+   page-break-inside: avoid;
+ }
+
+ p,
+ h2,
+ h3 {
+   orphans: 3;
+   widows: 3;
+ }
+
+ h2,
+ h3 {
+   page-break-after: avoid;
+ }
+}
+
+*/
